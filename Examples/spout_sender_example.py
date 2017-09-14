@@ -46,8 +46,8 @@ def Cube():
 def main():
 
     # window details
-    width = 800 
-    height = 600 
+    width = 640
+    height = 480
     display = (width,height)
     
     # window setup

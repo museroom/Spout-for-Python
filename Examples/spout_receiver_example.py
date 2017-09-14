@@ -17,7 +17,7 @@ def parse_args():
 
     parser.add_argument('--spout_size', nargs = 2, type=int, default=[640, 480], help='Width and height of the spout receiver')   
 
-    parser.add_argument('--spout_name', type=str, default='Composition - Resolume Arena', help='Spout receiving name - the name of the sender you want to receive')  
+    parser.add_argument('--spout_name', type=str, default='Spout Python Sender', help='Spout receiving name - the name of the sender you want to receive')
 
     parser.add_argument('--window_size', nargs = 2, type=int, default=[640, 480], help='Width and height of the window')    
 
@@ -50,7 +50,8 @@ def main():
     glEnable(GL_TEXTURE_2D)
 
     # init spout receiver
-    receiverName = args.spout_name 
+    receiverName = args.spout_name
+    print( 'receiverName:'+receiverName)
     spoutReceiverWidth = args.spout_size[0]
     spoutReceiverHeight = args.spout_size[1]
     # create spout receiver
